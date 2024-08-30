@@ -10,6 +10,8 @@
 
 //Trong trường hợp có nhiều kí tự có cùng số lần xuất hiện lớn nhất hoặc nhỏ nhất thì in ra kí tự có thứ tự từ điển lớn nhất.
 
+
+
 int main(){
     char c[1000];
     gets(c);

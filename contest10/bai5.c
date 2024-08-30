@@ -39,7 +39,5 @@ int main(){
         {
             printf("%c", i);
         }       
-    }
-    
-    
+    }  
 }
