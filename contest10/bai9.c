@@ -13,12 +13,13 @@ int comparator(const void *a, const void *b){
     char*y = (char*)b;
     return strcmp(x,y);
 }
+char a[10000][20];
+char b[10000][20];
 
 int main(){
     char c[100001];
     gets(c); 
-    char a[10000][20];
-    char b[10000][20];
+    
     char* token = strtok(c, " ");
     int n = 0;
     while (token != NULL)
