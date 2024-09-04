@@ -7,7 +7,8 @@
         "ctype.h": "c",
         "string.h": "c",
         "BAI13.C": "cpp",
-        "BAI4.C": "cpp"
+        "BAI4.C": "cpp",
+        "random": "c"
     },
     "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe"
 }
