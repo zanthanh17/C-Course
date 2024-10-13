@@ -74,6 +74,23 @@ void duyet(node *head){
     }
 }
 
+void sort(node **head){
+    for (node *i = (*head); i != NULL; i = i->next)
+    {
+        node *min=i;
+        for (node *j =i ->next; j != NULL; j = j -> next)
+        {
+            if (min->data > j ->data)
+            {
+                min = j;
+            }  
+        }
+        int tmp = min->data;
+        min ->data = i->data;
+        i->data = tmp;
+    } 
+}
+
 //Dem so node co trong DSLK
 int size(node *head){
     int cnt  = 0;
@@ -93,6 +110,7 @@ int main(){
         printf("2.Them vao cuoi\n");
         printf("3.Chen vao giua\n");
         printf("4.Duyet DSLK\n");
+        printf("5.Sap xep DSLK\n");
         printf("0.thoat!\n");
         printf("_____________________________\n");
         printf("Nhap lua chon :");
@@ -113,9 +131,12 @@ int main(){
             printf("Nhap gia tri can them: ");
             int x; scanf("%d", &x);
            insert(&head,k, x);
-        }
+        }    
         else if(lc == 4){
-            duyet(head);
+            duyet(&head);
+        }
+        else if(lc == 5){
+            sort(&head);
         }
         else if(lc == 0){
             break;
